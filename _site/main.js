@@ -6,14 +6,17 @@ $(document).ready(function() {
 
 	  $(this).toggleClass('active');
 	  $(".mobile-menu").fadeToggle();
-
-		$(".cross").click(function(){
-
-			$(this).toggleClass('active');
-			$(".page-nav").fadeToggle();
 		});
 
 	});
+
+	$(document).ready(function() {
+			$(".exit").click(function(){
+
+				$(this).toggleClass('active');
+				$(".page-nav").fadeToggle();
+			});
+
 	// end hamburger menu
 
 // reviews
