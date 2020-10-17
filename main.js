@@ -7,6 +7,12 @@ $(document).ready(function() {
 	  $(this).toggleClass('active');
 	  $(".mobile-menu").fadeToggle();
 
+		$(".cross").click(function(){
+
+			$(this).toggleClass('active');
+			$(".page-nav").fadeToggle();
+		});
+
 	});
 	// end hamburger menu
 
