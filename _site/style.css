@@ -59,12 +59,23 @@
 
   /* General typography */
 
-   h2, h3, h4, h5 {
+   h2, h3, h5 {
     line-height: 1;
     margin-bottom: 0.8rem;
     font-family: 'Exo', sans-serif;
     color: #0e54aa;
     font-weight: 400;
+  }
+
+  h4 {
+    line-height: 1;
+  padding: 2%;
+    font-family: 'Exo', sans-serif;
+    color: #fdc731;
+    font-size: 1.2rem;
+    font-weight: 200;
+    cursor: pointer;
+
   }
 
   h5 {
@@ -92,7 +103,6 @@
 
   h2  { font-size: 2.2rem;  }
   h3  { font-size: 1.8rem;  }
-  h4  { font-size: 1.5rem;  }
   p   { font-size: 1rem;  }
 
 
@@ -747,40 +757,47 @@
 }
 
 /* Accordian slides */
+.panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8 {display: none;}
 
-.accordion dt a {
-  padding: 0.25rem;
-  margin: 0.25rem 0;
-  display:block;
-  color: #fdc731;
-  position: relative;
-  text-decoration: none;
-}
-.accordion dd {
-  padding: 0.5rem;
+
+.panel1, .panel2, .panel3, .panel4, .panel5, .panel6, .panel7, .panel8 p {
+  padding: 0% 1%;
+  font-size: 0.8rem;
+
+
 }
 
-/* Accordian Icon */
-.accordion dt a::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  line-height: 1;
-  text-align: center;
-  -webkit-transition: all .35s;
-  -o-transition: all .35s;
-  transition: all .35s;
-}
+ .accordion{
+  border: solid 1px  #fdc731;
+  margin: 1%;}
+
+  .accordion p {
+    margin: 0% 1% 1% 1%;
+    padding: 1%;
+    border-left: 2px solid #fdc731;}
+
+  .accordion:hover{
+   border: solid 1px #0e54aa;
+   color: rgb(90, 90, 95);
+   cursor: pointer;}
+
+   h4:hover {color: #0e54aa;}
+
+ .accordion1, .accordion2, .accordion3, .accordion4, .accordion5, .accordion6, .accordion7, .accordion8 p {color: rgb(90, 90, 95);}
 
 /* NEED DANIELs HELP to stop auto popping back open, and make the thing twist */
-.accordion dt a::after {
-  content: "+";
+h4::before {
+  content: "＋";
+  font-size: 1.2rem;
+
 }
-.open::after {
-  transform: rotateZ(45deg);
+.active h4::before {
+  content: "－";
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in;
 }
 
 /* This media query kicks into action at the gridlex sm breakpoint */

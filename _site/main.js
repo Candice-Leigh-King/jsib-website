@@ -8,16 +8,66 @@ $(document).ready(function() {
 	  $(".mobile-menu").fadeToggle();
 		});
 
-	});
-
-	$(document).ready(function() {
+// put class of exit on elements to make them navigate back to page-nav
 			$(".exit").click(function(){
 
 				$(this).toggleClass('active');
 				$(".page-nav").fadeToggle();
 			});
 
-	// end hamburger menu
+			// end hamburger menu
+
+			// faqs
+
+			$(".accordion1").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel1").slideToggle();
+				})
+
+			$(".accordion2").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel2").slideToggle();
+				})
+
+			$(".accordion3").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel3").slideToggle();
+				})
+
+			$(".accordion4").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel4").slideToggle();
+				})
+
+			$(".accordion5").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel5").slideToggle();
+				})
+
+			$(".accordion6").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel6").slideToggle();
+				})
+
+			$(".accordion7").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel7").slideToggle();
+				})
+
+			$(".accordion8").click(function(){
+
+				$(this).toggleClass('active');
+				$(".panel8").slideToggle();
+				})
+
+
 
 // reviews
 
@@ -85,21 +135,26 @@ $(document).ready(function() {
 		}
 	});
 
-	var allPanels = $('.accordion > dd').hide();
 
-		$('.accordion > dt > a').click(function() {
-
-			allPanels.slideUp();
-
-	    $(this).filter('.open').removeClass('open').addClass('closing')
-	    $('.accordion > dt > a').removeClass('open');
-	  $(this).not(".closing").addClass('open').parent().next().slideDown();
-	    $('.accordion > dt > a').removeClass('closing');
-
-	    return false;
-		});
+		//make sure the page is ready befor running the scripts
+		// This is the hamburger menu
 
 
-});
+// 	var allPanels = $('.accordion > dd').hide();
+//
+// 		$('.accordion > dt > a').click(function() {
+//
+// 			allPanels.slideUp();
+//
+// 	    $(this).filter('.open').removeClass('open').addClass('closing')
+// 	    $('.accordion > dt > a').removeClass('open');
+// 	  $(this).not(".closing").addClass('open').parent().next().slideDown();
+// 	    $('.accordion > dt > a').removeClass('closing');
+//
+// 	    return false;
+// 		});
+//
+//
+ });
 
 // end accordian
