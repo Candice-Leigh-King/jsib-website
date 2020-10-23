@@ -43,7 +43,10 @@
   .padded-2 {  padding: 2rem;  }
   .padded-3 {  padding: 2%;}
   .padded-sides {padding: 0% 5%;}
+  .padded-top-bottom {padding: 5% 0%;}
   .capped-width { width: 80%; margin: auto;}
+
+  .margin-top {margin-top: 2%;}
 
   .tall-50  {  min-height: 50vh;   }
   .tall-100 {  min-height: 100vh;  }
@@ -235,13 +238,14 @@
     border-color: #fdc731;
   }
 
-  .button-solid {
-    background-color: #fdc731;
-    border-color:#fdc731;
+  .button-solid:hover {
+    background-color: #0e54aa;
+    border-color:#0e54aa;
     color: white;
   }
 
-  .button-solid:hover {
+  .button-solid{
+    color: white;
     background-color: #fdc731;
     border-color: #fdc731;
   }
@@ -826,6 +830,13 @@ h4::before {
   }
 
   .big-bold {font-size: 1.2rem;}
+
+  h3 {font-size: 1.6rem;}
+
+  h2 {font-size: 2rem;}
+  
+  .icons i {
+    font-size: 2.5rem;
 
 } /* end media query */
 

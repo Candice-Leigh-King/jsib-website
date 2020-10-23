@@ -74,7 +74,7 @@ $(document).ready(function() {
 	    $(document).ready(function(){
 	      $('.one-time').slick({
 	        draggable: true,
-	        dots: true,
+	        arrows: true,
 	        adaptiveHeight: true,
 	        autoplaySpeed: 5000
 	      });
