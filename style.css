@@ -43,6 +43,9 @@
   .padded-2 {  padding: 2rem;  }
   .padded-3 {  padding: 2%;}
   .padded-sides {padding: 0% 5%;}
+  .padded-bottom {padding-bottom: 5%;}
+  .padded-top {padding-top: 5%;}
+  .padded-left {padding-left: 2%;}
   .padded-top-bottom {padding: 5% 0%;}
   .capped-width { width: 80%; margin: auto;}
 
@@ -71,8 +74,17 @@
   }
 
   h4 {
+   line-height: 1;
+   padding: 2%;
+   font-family: 'Exo', sans-serif;
+   color: #fdc731;
+   font-size: 1.2rem;
+   font-weight: 200;
+ }
+
+  .plus h4 {
     line-height: 1;
-  padding: 2%;
+    padding: 2%;
     font-family: 'Exo', sans-serif;
     color: #fdc731;
     font-size: 1.2rem;
@@ -108,10 +120,20 @@
   h3  { font-size: 1.8rem;  }
   p   { font-size: 1rem;  }
 
+  .italic {font-style: italic;}
+
+  .map h3 {  font-family: 'Exo', sans-serif;
+    color: #fdc731;
+    font-size: 1.2rem;
+    font-weight: 200;}
+
 
   p, ul {
      margin-bottom: 0.8rem;
   }
+  .backgroundyellow {background-color: #fdc731;}
+
+  .nospace {margin-bottom: 0rem;}
 
   /* this makes sure that the last element in any container doesn't have margin-bottom */
   h2:last-child,
@@ -152,6 +174,7 @@
 
 
 
+
   /* ------- unique typography styles - adjust to suit your styles  --------- */
 
   .not-bold   { font-weight: normal; } /* add this class to make headings not bold */
@@ -161,6 +184,13 @@
     font-size: 2.5rem;
     font-weight: 500;
   }
+  .bold {
+
+    font-weight: 700;
+  }
+
+  .normal {font-weight: normal;}
+  h4 {font-size: 1rem;}
 
   p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
     font-size: 1.2rem;
@@ -790,12 +820,12 @@
    color: rgb(90, 90, 95);
    cursor: pointer;}
 
-   h4:hover {color: #0e54aa;}
+  .plus h4:hover {color: #0e54aa;}
 
  .accordion1, .accordion2, .accordion3, .accordion4, .accordion5, .accordion6, .accordion7, .accordion8 p {color: rgb(90, 90, 95);}
 
 /* NEED DANIELs HELP to stop auto popping back open, and make the thing twist */
-h4::before {
+.plus h4::before {
   content: "＋";
   font-size: 1.2rem;
 
@@ -834,9 +864,8 @@ h4::before {
     flex-direction: row;
   }
 
-  .big-bold {font-size: 1.2rem;}
-
-  h4 {font-size: 1rem;}
+  .big-bold {font-size: 2rem;}
+  .not-bold {font-size: 1.5rem;}
 
   h3 {font-size: 1.6rem;}
 
