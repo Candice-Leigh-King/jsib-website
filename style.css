@@ -42,6 +42,7 @@
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem;  }
   .padded-3 {  padding: 2%;}
+  .padded-4 {padding: 1%;}
   .padded-sides {padding: 0% 5%;}
   .padded-bottom {padding-bottom: 5%;}
   .padded-top {padding-top: 5%;}
@@ -132,6 +133,7 @@
      margin-bottom: 0.8rem;
   }
   .backgroundyellow {background-color: #fdc731;}
+  .backgroundblue {background-color: #0e54aa;}
 
   .nospace {margin-bottom: 0rem;}
 
