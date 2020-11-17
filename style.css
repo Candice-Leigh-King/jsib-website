@@ -121,6 +121,49 @@
   h3  { font-size: 1.8rem;  }
   p   { font-size: 1rem;  }
 
+  .call-button {
+    position: fixed;
+    bottom: 10px;
+    right: 13px;
+    background-color: #fdc731;
+    color: white;
+    padding: 2% 3%;
+    border-radius: 25px;
+    border: solid #0e53a7 1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0e53a7;
+    z-index: 1;}
+
+    .emergency-assist {
+    border: 1px solid #0e54aa;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    font-family: 'Exo', sans-serif;
+  }
+
+  .emergency-assist-mob {
+  border: 1px solid #0e54aa;
+  border-radius: 2px;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  background-color: #fdc731;
+  color: white;
+  text-shadow: 0px 0.7px 1.5px rgba(0,0,0,0.5);
+  font-family: 'Exo', sans-serif;
+}
+.emergency-assist-mob p {margin-bottom: 0rem;}
+
+
+    .emergency-assist:hover {
+      background-color: #0e54aa;
+      color: white;
+
+      }
+
+    .emergency-assist p{margin-bottom: 0rem;}
+
+
   .italic {font-style: italic;}
 
   .map h3 {  font-family: 'Exo', sans-serif;
@@ -167,7 +210,7 @@
 
   .claims h2 {color: white;}
 
-  .banner p {color: #0e54aa;}
+
 
   a {
     text-decoration: none;
@@ -740,7 +783,11 @@
   margin-bottom: 1rem;
   width: 100%;
 }
+@media(min-width:769px){
 
+.desktop-hide  {display: none;}
+
+}
 @media(max-width:767px) {
   .masonry {
     column-count: 2;
