@@ -666,6 +666,8 @@
     width: 100%;
     font-size: 1rem;
     vertical-align: top;
+    color: rgb(92,92,97);
+    background-color: #ffffff;
   }
 
   input:focus,
