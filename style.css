@@ -657,7 +657,7 @@
 
   /* ----- FORMS --------------------------- */
 
-  input,
+  input, select,
   textarea {
     border-style: solid;
     border: 2px solid rgb(200, 200, 205);
