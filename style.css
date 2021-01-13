@@ -643,7 +643,7 @@
   }
 
   a.category:hover {
-    border-color: #1abc9c; /* featured color */
+    border-color: rgb(200, 200, 205);; /* featured color */
     color: #1abc9c; /* featured color */
   }
 
