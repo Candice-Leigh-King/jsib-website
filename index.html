@@ -371,7 +371,7 @@ belief-image: /images/jsib-values.jpg
 <section>
   <section id="quote" class="padded-10 ">
 
-    <form action="https://formspree.io/jerome@jsib.co.za" method="POST" class="enquiry capped-width">
+    <form method="post" action="/success.html" class="enquiry capped-width">
 
       <div class="grid-center padded">
       <div class="col-12 centered">
@@ -407,6 +407,8 @@ belief-image: /images/jsib-values.jpg
           <br>
         </div>
         <input type="text" name="message" placeholder="What would you like insured?" class="input-text margin-top">
+        <input type="hidden" name="_to" value="ulwazi@jsib.co.za" />
+        <input type="text" name="_gotcha" style="display: none;" />
         <input type="submit" value="Send Message" class="button-solid">
   </form>
   </section>
