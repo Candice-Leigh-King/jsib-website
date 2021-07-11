@@ -25,7 +25,8 @@
     font-family: 'Noto Sans HK', sans-serif;
     color: rgb(90, 90, 95);
     overflow-x: hidden;
-    max-width: 1024px;
+    max-width: 1500px;
+    margin:0 auto;
   }
 
    /* this overrides the default padding and margin on gridlex elements */
