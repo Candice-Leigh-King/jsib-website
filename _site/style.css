@@ -25,6 +25,8 @@
     font-family: 'Noto Sans HK', sans-serif;
     color: rgb(90, 90, 95);
     overflow-x: hidden;
+    max-width: 1500px;
+    margin:0 auto;
   }
 
    /* this overrides the default padding and margin on gridlex elements */
@@ -45,23 +47,19 @@
   .padded-4 {padding: 1%;}
   .padded-sides {padding: 0% 5%;}
   .padded-bottom {padding-bottom: 5%;}
-  .padded-top {padding-top: 5%;}
+  .padded-top {padding-top: 7%;}
+  .padded-top-reg {padding-top: 5%;}
   .padded-left {padding-left: 2%;}
   .padded-top-bottom {padding: 5% 0%;}
   .capped-width { width: 80%; margin: auto;}
 
   .margin-top {margin-top: 2%;}
 
-  .tall-50  {  min-height: 50vh;   }
-  .tall-100 {  min-height: 100vh;  }
 
   .dark-bg      {  background-color: rgb(90, 90, 95);     }
   .light-bg     {  background-color: #f9f9f9;  }
-  .featured-bg  {  background-color: #ffdfc3;       }
   .blue-bg      { background-color:  #0e54aa;}
   .mustard-bg { background-color: #fdc731;}
-
-  .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
 
   /* General typography */
@@ -121,7 +119,8 @@
   h3  { font-size: 1.8rem;  }
   p   { font-size: 1rem;  }
 
-  .call-button {
+  .call-button
+    {
     position: fixed;
     bottom: 10px;
     right: 13px;
@@ -130,38 +129,43 @@
     padding: 2% 3%;
     border-radius: 25px;
     border: solid #0e53a7 1px;
+    box-shadow: 0px 0px 5px grey;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #0e53a7;
-    z-index: 1;}
+    z-index: 1;
+    }
 
-    .emergency-assist {
+  .emergency-assist
+    {
     border: 1px solid #0e54aa;
     border-radius: 2px;
     text-align: center;
     padding: 0.5rem 0rem;
     font-family: 'Exo', sans-serif;
-  }
+    }
 
-  .emergency-assist-mob {
-  border: 1px solid #0e54aa;
-  border-radius: 2px;
-  text-align: center;
-  padding: 0.5rem 0rem;
-  background-color: #fdc731;
-  color: white;
-  text-shadow: 0px 0.7px 1.5px rgba(0,0,0,0.5);
-  font-family: 'Exo', sans-serif;
-}
-.emergency-assist-mob p {margin-bottom: 0rem;}
+  .emergency-assist-mob
+  {
+    border: 1px solid #0e54aa;
+    border-radius: 2px;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    background-color: #fdc731;
+    color: white;
+    text-shadow: 0px 0.7px 1.5px rgba(0,0,0,0.5);
+    font-family: 'Exo', sans-serif;
+    }
+
+  .emergency-assist-mob p {margin-bottom: 0rem;}
 
 
-    .emergency-assist:hover {
-      background-color: #0e54aa;
-      color: white;
+  .emergency-assist:hover
+    {
+    background-color: #0e54aa;
+    color: white;
+    }
 
-      }
-
-    .emergency-assist p{margin-bottom: 0rem;}
+  .emergency-assist p{margin-bottom: 0rem;}
 
 
   .italic {font-style: italic;}
@@ -190,40 +194,38 @@
     margin-bottom:0;
   }
 
-  hr { /* this is a line element */
-    border: none;
-    border-bottom: 3px solid;
-    width: 4rem;
-    margin-bottom: 1rem;
-  }
-  .icons i {
+  .icons i
+    {
     font-size: 3rem;
-    color: #fdc731; }
+    color: #fdc731;
+    }
 
-  .icons p {
+  .icons p
+    {
     font-size: 0.9rem;
-    font-family: 'Exo', sans-serif;}
-  .icons li {
+    font-family: 'Exo', sans-serif;
+    }
+
+  .icons li
+    {
     font-size: 0.8rem;
     text-align: left;
-    margin-bottom: 2%;}
+    margin-bottom: 2%;
+    }
 
   .claims h2 {color: white;}
 
-
-
-  a {
+  a
+    {
     text-decoration: none;
-    color: #0e54aa;}
+    color: #0e54aa;
+    }
+
   a:hover {color: #fdc731;}
-
-
-
 
   /* ------- unique typography styles - adjust to suit your styles  --------- */
 
   .not-bold   { font-weight: normal; } /* add this class to make headings not bold */
-  .no-bullets { list-style:none; } /* Used to remove dot-points from a list */
 
   .big-bold {
     font-size: 2.5rem;
@@ -234,7 +236,7 @@
     font-weight: 700;
   }
 
-  .normal {font-weight: normal;}
+
   h4 {font-size: 1rem;}
 
   p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
@@ -246,25 +248,6 @@
   .far {        /* default styles for font awesome icons */
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
-
-  .featured-stat {     /* styles for our featured statistic icons  */
-    font-size: 3rem;
-    color: #e67e22;
-    margin-bottom: 1rem;
-    display: block;
-  }
-
-  .highlight { /* this is applied to spans for out highlighted text. */
-    background-color: rgb(240, 240, 245);
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 2px;
-  }
-
-  .quote-icon {  /* You can also change the fonts for these icons specifically */
-    font-size: 6rem;
-    line-height: 1;
   }
 
   /* javascript */
@@ -325,91 +308,69 @@
     border-color: #fdc731;
   }
 
-
-
   /* Headers and footers */
-
-  header {
-    padding: 2% 5%;
-    background-color: #fdc731;
-  }
 
   header a,
   footer a,
-  nav a {
+  nav a
+    {
     text-decoration: none;
     color: #0e54aa;
     font-family: 'Exo', sans-serif;
     text-transform: lowercase;
-  }
+    }
 
   header nav a,
-  .inline a {
+  .inline a
+    {
     display: inline-block;
     padding: 0.5rem;
+    }
 
-  }
-  header nav a:hover {
+  header nav a:hover
+    {
     border-bottom: #0e54aa solid 1px;
     color: white;
-  }
+    }
 
-  header nav a.emphasis {
-    /* padding: 0.5rem 2rem; */
+  header nav a.emphasis
+    {
     margin: 0 0.5rem;
     border: 1px solid #0e54aa;
     border-radius: 2px;
     color:#0e54aa;
-  }
+    }
 
-  header nav a.emphasis:hover {
+  header nav a.emphasis:hover
+    {
     background-color: #0e54aa;
     color: white;
-  }
+    }
 
   footer {border-top: #0e54aa solid 1.5px; }
-  .sub-footer a {
+
+  .sub-footer a
+    {
     color: white;
     padding: 0% 2%;
-  }
+    }
+
   .sub-footer a:hover {color: #fdc731;}
   .sub-footer p {
     color: white;
     padding: 0% 2%;}
 
-  .logo img {max-height: 6rem;
-  width: auto;}
+  .logo img
+    {
+    max-height: 6rem;
+    width: auto;
+    }
 
   .associates img {
     padding: 5%;
     max-height: 4rem;
     width: auto;}
 
-  /* Dropdown Header */
-
-  header li {
-    list-style: none;
-    display: inline-block;
-    position: relative;
-  }
-
-  header li .dropdown-menu {
-    display: none;
-    padding: 1rem;
-    min-width: 12rem;
-  }
-
-  header li li {
-    display: block;
-  }
-
-  header .dropdown:hover .dropdown-menu {
-    display: block;
-    position: absolute;
-    top: 2rem;
-    right: -1rem;
-    background-color: white;
-  }
 
   /* Fixed Header Option */
 
@@ -425,18 +386,16 @@
     text-align: center;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 5px 10px -5px rgba(0, 0, 0, 0.2);
   }
-  .bump-for-header {
-    min-height: 4rem;
-  }
-
 
   /* Hamburger Menu */
   .hamburger,
-  .mobile-menu {
+  .mobile-menu
+    {
     display: none;
-  }
+    }
 
-  .hamburger {
+  .hamburger
+    {
     position: fixed;
     top:0;
     right:0;
@@ -444,10 +403,8 @@
     font-size: 1.5rem;
     padding:2% 5%;
     color: #0e54aa;
-  }
-  .active {
-    color: white;
-  }
+    }
+
   .cross {
     top:0;
     right:0;
@@ -508,164 +465,38 @@
   /* BANNERS */
 
   .banner,
-  .banner-with-header {
-    background-image: url('../images/adventure.jpg');
+  .banner-with-header
+    {
     background-size: cover;
     background-position: center;
     min-height: 80vh;
-  }
-
-  .fixed {
-    background-attachment: fixed;
-  }
+    }
 
   .banner-with-header {
     padding-top: 6rem;
     min-height: 100vh;
   }
 
-  .absolute-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    background: none;
-  }
-
-
-  .bg-image {
-    background-image: url('../images/adventure.jpg');
+  .bg-image
+    {
     background-size: cover;
     background-position: center;
     min-height: 10rem;
-  }
-  /* Hover grid */
-
-  .hover-container {
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hover-overlay {
-    position: relative;
-    padding-bottom: 100%;
-    color: rgba(255, 255, 255, 0);
-    position: relative;
-    /* you only need to use relative + absolute if you want to determine the exact aspect ratio of the container */
-    transition: all 0.3s;
-  }
-
-  .hover-overlay:hover {
-    background-color: rgba(60, 60, 60, 0.7);
-    color: white;
-  }
-
-  .hover-inner {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  .hover-inner p {
-    margin-bottom: 0;
-  }
-
-  /* Blog Post Elements */
-  /* ---- Blog loop elements style 1 ------ */
-  .blog-loop .blog-item {
-    color: inherit;
-    text-decoration: none;
-    width: 100%;
-    margin: 0;
-    display:block;
-  }
-
-  .blog-loop .bg-image {
-    padding-bottom: 60%;
-    margin-bottom: 0.5rem;
-  }
-
-  .blog-loop img,
-  .post-body img {
-      margin-bottom: 2vh;
-  }
-
-  /* ---- Blog loop elements style 2 ------ */
-  .blog-item-wide .bg-image {
-    padding-bottom: 30%;
-  }
-
-  .text-bump { /* selects every second one and reverses it */
-    margin-left: -2rem;
-    background-color: rgb(240,240,245);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  .blog-item-wide:nth-child(odd) { /* selects every second one and reverses it */
-    flex-direction: row-reverse;
-  }
-
-  .blog-item-wide:nth-child(odd) .text-bump { /* selects every second one and reverses it */
-    margin-right: -2rem;
-    margin-left: 0;
-  }
-
-
-  /* ---- Blog post pages ------ */
-  .post-body {
-    padding-right: 3%;
-  }
-
-  .post-meta {
-    font-size: 0.9rem;
-  }
-
-  .sidebar > div {
-    border: 1px solid rgb(245,245,245);
-    padding: 2rem;
-    margin: 2vh 0;
-  }
-
-  .category {
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(90,90,95);
-    border: 1px solid rgb(90,90,95);
-    margin: 2px;
-    padding: 2px 10px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-  }
-
-  a.category:hover {
-    border-color: #1abc9c; /* featured color */
-    color: #1abc9c; /* featured color */
-  }
-
-  .social-share nav [class*=fa] {
-    padding: 0 1em 0 0;
-  }
-
-  .social-share hr{
-    margin: 3rem 0;
-  }
+    }
 
   /* ----- FORMS --------------------------- */
 
-  input,
+  input, select,
   textarea {
     border-style: solid;
     border: 2px solid rgb(200, 200, 205);
     padding: 0.8em;
     display: block;
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     vertical-align: top;
+    color: rgb(92,92,97);
+    background-color: #ffffff;
   }
 
   input:focus,
@@ -688,53 +519,9 @@
     padding: 5px;
   }
 
-  .email-signup input {
-    width: 30%;
-    display: inline-block;
-    max-width: 250px;
-    margin-top:1rem;
-  }
-
-  .email-signup .button-solid {
-    padding: 0.8em;
-    border-radius: 0;
-    font-size: 1rem;
-  }
    form .button {
      width:100%;
    }
-
-   @media(max-width:768px) {
-     .email-signup input {
-       width: 100%;
-       max-width: 100%;
-     }
-   }
-
-  /* Testimomnials */
-
-  .card {
-    padding: 2rem;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-  }
-
-  .profile {
-    max-width: 8rem;
-    border-radius: 100%;
-    margin-bottom: 2rem;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-  }
-
-  .card .author {
-    font-weight: bold;
-    margin-bottom:0;
-  }
-
-  .card .company {
-    margin-bottom: 2rem;
-  }
 
   /* clickable boxes */
 
@@ -788,17 +575,6 @@
 .desktop-hide  {display: none;}
 
 }
-@media(max-width:767px) {
-  .masonry {
-    column-count: 2;
-  }
-}
-
-@media(max-width:567px) {
-  .masonry {
-    column-count: 1;
-  }
-}
 
 /* pricing cards  */
 
@@ -819,29 +595,6 @@
 
 .card .button {
   margin-top:2rem;
-}
-
-/* Responsive video */
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.embed-container.vertical {
-  padding-bottom: 162.25%;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /* Accordian slides */
@@ -873,7 +626,7 @@
 
  .accordion1, .accordion2, .accordion3, .accordion4, .accordion5, .accordion6, .accordion7, .accordion8 p {color: rgb(90, 90, 95);}
 
-/* NEED DANIELs HELP to stop auto popping back open, and make the thing twist */
+
 .plus h4::before {
   content: "＋";
   font-size: 1.2rem;
@@ -921,8 +674,11 @@
   h2 {font-size: 2rem;}
 
   .icons i {
-    font-size: 2.5rem;
+    font-size: 2.5rem;}
 
+.padded-top {
+    padding-top: 20%;
+}
 } /* end media query */
 
 
